@@ -33,6 +33,11 @@ console.log(process.env.MONGO_URI)
 //     console.log("Server started at http://localhost:5000 avinash");
 // });
 
+app.delete("/api/products/:id", async (req,res) => {
+    const {id} =req.params;
+    console.log("id:",id);
+});
+
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
     connectDB();

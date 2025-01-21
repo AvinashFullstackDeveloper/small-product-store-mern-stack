@@ -11,7 +11,7 @@ function App() {
       {/* <NavBar /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/cerate" element={<CreatePage />} />
+        <Route path="/create" element={<CreatePage />} />
       </Routes>
     </Box>
   )
